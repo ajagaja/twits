@@ -56,6 +56,7 @@ lda.save('lda.csv')
 clean_topics = []
 probs = []
 vals = []
+json = '{ "name": "parent", "children": [ '
 topicDict = defaultdict(list)
 topicDict['names'].append('parent')
 counter = 0
@@ -64,15 +65,20 @@ for topic in topics:
 	tempTopic = []
 	tempProbs = []
 	topic = topic.split(' + ')
-	topic
+	json = json + '{"name" : "topic' + str(counter) + '", "children": [ ' 
 	topicDict['children'].append('topic' + str(counter))
 	for word in topic:
 		val = word.split('*')
 		tempProbs.append(val[0])
 		tempTopic.append(val[1])
+		json = json + '{"name" : "' + val[1] + '", "size": ' + val[0] + '}, '
 		topicDict['topic' + str(counter)].append((val[1],val[0]))
+	json = json[:len(json)-2] + ']},'
 	probs.append(tempProbs)
 	clean_topics.append(tempTopic)
+
+json = json[:len(json)-1] + ']}'
+print json
 
 json_string = json.dumps(topicDict)
 f = open('topics.json', 'w')

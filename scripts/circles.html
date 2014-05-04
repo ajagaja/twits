@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)http://bl.ocks.org/mbostock/raw/4063530/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<meta charset="utf-8">
 <style>
 
 circle {
@@ -20,8 +19,8 @@ text {
 }
 
 </style>
-</head><body>
-<script src="./CirclePacking_files/d3.v3.min.js"></script>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
 var diameter = 960,
@@ -37,7 +36,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(2,2)");
 
-d3.json("flare.json", function(error, root) {
+d3.json("topicsfinal.json", function(error, root) {
   var node = svg.datum(root).selectAll(".node")
       .data(pack.nodes)
     .enter().append("g")

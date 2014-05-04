@@ -1,0 +1,155 @@
+{ 
+	"name": "parent", 
+	"children": [ 
+	{
+		"name" : "topic1", 
+		"children": [ 
+			{"name" : "tide", "size": 0.099}, 
+			{"name" : "tidealrescate", "size": 0.079}, 
+			{"name" : "i", "size": 0.033}, 
+			{"name" : "our", "size": 0.020}, 
+			{"name" : "chat", "size": 0.019}, 
+			{"name" : "spring", "size": 0.018}, 
+			{"name" : "refresh", "size": 0.018}, 
+			{"name" : "twitter", "size": 0.018}, 
+			{"name" : "browardsaves", "size": 0.016}, 
+			{"name" : "join", "size": 0.015}
+		]
+	},
+	{
+		"name" : "topic2", 
+		"children": [ 
+			{"name" : "tide", "size": 0.071}, 
+			{"name" : "tidealrescate", "size": 0.032}, 
+			{"name" : "cant", "size": 0.023}, 
+			{"name" : "at", "size": 0.021}, 
+			{"name" : "wait", "size": 0.015}, 
+			{"name" : "do", "size": 0.015}, 
+			{"name" : "i", "size": 0.014}, 
+			{"name" : "jrmotorspos", "size": 0.012}, 
+			{"name" : "kevinharvick", "size": 0.011}, 
+			{"name" : "more", "size": 0.011}
+		]
+	},
+	{
+		"name" : "topic3", 
+		"children": [ 
+			{"name" : "tide", "size": 0.092}, 
+			{"name" : "jrmotorspos", "size": 0.020}, 
+			{"name" : "kevinharvick", "size": 0.020}, 
+			{"name" : "tidealrescate", "size": 0.019}, 
+			{"name" : "looking", "size": 0.018}, 
+			{"name" : "at", "size": 0.016}, 
+			{"name" : "11", "size": 0.016}, 
+			{"name" : "coldwater", "size": 0.014}, 
+			{"name" : "with", "size": 0.014}, 
+			{"name" : "dalejr", "size": 0.012}
+			]
+	},
+	{
+		"name" : "topic4", 
+		"children": [ 
+			{"name" : "tide", "size": 0.075}, 
+			{"name" : "tidealrescate", "size": 0.065}, 
+			{"name" : "pay", "size": 0.056}, 
+			{"name" : "twitter", "size": 0.041}, 
+			{"name" : "craftychica", "size": 0.037}, 
+			{"name" : "cleaning", "size": 0.032}, 
+			{"name" : "spring", "size": 0.032}, 
+			{"name" : "at", "size": 0.022}, 
+			{"name" : "browardsaves", "size": 0.021}, 
+			{"name" : "today", "size": 0.020}
+			]
+	},
+	{
+		"name" : "topic5", 
+		"children": [ 
+			{"name" : "tide", "size": 0.089}, 
+			{"name" : "tidealrescate", "size": 0.083}, 
+			{"name" : "browardsaves", "size": 0.073}, 
+			{"name" : "craftychica", "size": 0.064}, 
+			{"name" : "thriftyninja", "size": 0.059}, 
+			{"name" : "monicabenavidez", "size": 0.059}, 
+			{"name" : "hello", "size": 0.031}, 
+			{"name" : "amp", "size": 0.030}, 
+			{"name" : "follow", "size": 0.025}, 
+			{"name" : "hosts", "size": 0.025}
+			]
+	},
+	{
+		"name" : "topic6", 
+		"children": [ 
+			{"name" : "cold", "size": 0.073}, 
+			{"name" : "water", "size": 0.072}, 
+			{"name" : "tide", "size": 0.063}, 
+			{"name" : "switching", "size": 0.039}, 
+			{"name" : "save", "size": 0.038}, 
+			{"name" : "energy", "size": 0.035}, 
+			{"name" : "pledge", "size": 0.035}, 
+			{"name" : "im", "size": 0.035}, 
+			{"name" : "help", "size": 0.034}, 
+			{"name" : "have", "size": 0.032}
+			]
+	},
+	{
+		"name" : "topic7", 
+		"children": [ 
+			{"name" : "tide", "size": 0.080}, 
+			{"name" : "mrskrystie", "size": 0.053}, 
+			{"name" : "tidealrescate", "size": 0.043}, 
+			{"name" : "zerinagrace", "size": 0.043}, 
+			{"name" : "mamasmission", "size": 0.039}, 
+			{"name" : "tiggerkd26", "size": 0.037}, 
+			{"name" : "shippydoll", "size": 0.034}, 
+			{"name" : "queenof5guys", "size": 0.032}, 
+			{"name" : "bredanielle0602", "size": 0.030}, 
+			{"name" : "fkat727", "size": 0.030}
+			]
+	},
+	{
+		"name" : "topic8", 
+		"children": [ 
+			{"name" : "tide", "size": 0.088}, 
+			{"name" : "tidealrescate", "size": 0.052}, 
+			{"name" : "whos", "size": 0.032}, 
+			{"name" : "5", "size": 0.027}, 
+			{"name" : "minutes", "size": 0.016}, 
+			{"name" : "hey", "size": 0.015}, 
+			{"name" : "can", "size": 0.015}, 
+			{"name" : "hi", "size": 0.014}, 
+			{"name" : "i", "size": 0.014}, 
+			{"name" : "am", "size": 0.013}
+			]
+	},
+	{
+		"name" : "topic9", 
+		"children": [ 
+			{"name" : "tide", "size": 0.037}, 
+			{"name" : "kroger", "size": 0.035}, 
+			{"name" : "amp", "size": 0.026}, 
+			{"name" : "xe2x80xa6", "size": 0.017}, 
+			{"name" : "tim", "size": 0.017}, 
+			{"name" : "race", "size": 0.017}, 
+			{"name" : "plogger", "size": 0.017}, 
+			{"name" : "honored", "size": 0.017}, 
+			{"name" : "friend", "size": 0.017}, 
+			{"name" : "longtime", "size": 0.017}
+			]
+	},
+	{
+		"name" : "topic10", 
+		"children": [ 
+			{"name" : "tide", "size": 0.108}, 
+			{"name" : "tidealrescate", "size": 0.094}, 
+			{"name" : "browardsaves", "size": 0.052}, 
+			{"name" : "craftychica", "size": 0.026}, 
+			{"name" : "thriftyninja", "size": 0.024}, 
+			{"name" : "all", "size": 0.020}, 
+			{"name" : "ready", "size": 0.020}, 
+			{"name" : "monicabenavidez", "size": 0.019}, 
+			{"name" : "win", "size": 0.015}, 
+			{"name" : "following", "size": 0.014}
+			]
+	}
+	]
+}
