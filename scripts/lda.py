@@ -2,6 +2,8 @@ import csv
 import gensim
 import logging, bz2
 import nltk
+from collections import defaultdict
+import json
 
 #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
@@ -43,7 +45,10 @@ lda.save('lda.csv')
 clean_topics = []
 probs = []
 vals = []
+topicDict = defaultdict(list)
+counter = 0
 for topic in topics:
+	counter = counter +1
 	tempTopic = []
 	tempProbs = []
 	topic = topic.split(' + ')
@@ -52,10 +57,14 @@ for topic in topics:
 		val = word.split('*')
 		tempProbs.append(val[0])
 		tempTopic.append(val[1])
+		topicDict['topic' + str(counter)].append((val[1],val[0]))
 	probs.append(tempProbs)
 	clean_topics.append(tempTopic)
-#print clean_topics
 
+json_string = json.dumps(topicDict)
+f = open('topics.json', 'w')
+print >> f,json_string
+f.close()
 
 with open('topics.csv', 'wb') as acsv:
     w = csv.writer(acsv)
