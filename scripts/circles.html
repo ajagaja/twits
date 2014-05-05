@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<title>LDA on Twitter Search Data</title>
 <style>
 
 circle {
@@ -19,6 +20,7 @@ text {
 }
 
 </style>
+<h1>LDA on Twitter Search Data</h1>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
@@ -34,25 +36,38 @@ var svg = d3.select("body").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
   .append("g")
-    .attr("transform", "translate(2,2)");
+    .attr("transform", "translate(2,2)")
+	;
 
 d3.json("topicsfinal.json", function(error, root) {
   var node = svg.datum(root).selectAll(".node")
       .data(pack.nodes)
     .enter().append("g")
-      .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+	  .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
+	  .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
   node.append("title")
-      .text(function(d) { return d.name + (d.children ? "" : ": " + format(d.size)); });
+      .text(function(d) { return d.name + (d.children ? "" : ": " + format(d.size)); })
+	  ;
+
 
   node.append("circle")
-      .attr("r", function(d) { return d.r; });
+		.attr("r", 1)	   
+		.transition()
+		.duration(1000)
+		.attr("r", function(d) { return d.r; })
+
+  ;
 
   node.filter(function(d) { return !d.children; }).append("text")
-      .attr("dy", ".3em")
+      .attr("dy", diameter/2)
+	  .transition()
+	  .duration(1000)
+	  .attr("dy", ".3em")
       .style("text-anchor", "middle")
-      .text(function(d) { return d.name.substring(0, d.r / 3); });
+      .text(function(d) { return d.name.substring(0, d.r / 3); })
+  	  ;
+
 });
 
 d3.select(self.frameElement).style("height", diameter + "px");
